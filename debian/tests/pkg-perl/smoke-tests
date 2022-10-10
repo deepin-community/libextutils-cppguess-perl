@@ -1,0 +1,2 @@
+# prevent from recursing under t/
+t/*.t

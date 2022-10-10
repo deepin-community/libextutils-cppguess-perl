@@ -1,0 +1,29 @@
+Source: libextutils-cppguess-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               perl
+Build-Depends-Indep: libcapture-tiny-perl <!nocheck>,
+                     libextutils-cbuilder-perl (>= 0.280231) <!nocheck>,
+                     libextutils-parsexs-perl (>= 3.350000) <!nocheck>,
+                     libmodule-build-perl <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libextutils-cppguess-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libextutils-cppguess-perl.git
+Homepage: https://metacpan.org/release/ExtUtils-CppGuess
+Rules-Requires-Root: no
+
+Package: libextutils-cppguess-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libcapture-tiny-perl,
+         libextutils-parsexs-perl (>= 3.350000)
+Description: Perl build helper to guess C++ compiler and flags
+ ExtUtils::CppGuess attempts to guess the system's C++ compiler that is
+ compatible with the C compiler that your perl was built with.  It can
+ generate the necessary options to the Module::Build constructor or to
+ ExtUtils::MakeMaker's WriteMakefile function.

@@ -1,0 +1,122 @@
+libextutils-cppguess-perl (0.23-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.23.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 16 Aug 2021 17:52:21 +0200
+
+libextutils-cppguess-perl (0.21-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.21.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set upstream metadata fields: Bug-Submit, Repository.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 25 Jan 2020 19:48:24 +0100
+
+libextutils-cppguess-perl (0.20-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.20.
+  * Declare compliance with Debian Policy 4.4.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Nov 2019 02:47:09 +0100
+
+libextutils-cppguess-perl (0.19-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Laurent Baillet ]
+  * fix lintian file-contains-trailing-whitespace warning
+
+  [ gregor herrmann ]
+  * Import upstream version 0.19.
+  * Update (build) dependencies.
+  * Rename debian/source.lintian-overrides to
+    debian/source/lintian.overrides.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.0.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+  * Set upstream metadata fields: Bug-Database.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 25 Aug 2019 16:50:31 +0200
+
+libextutils-cppguess-perl (0.12-1) unstable; urgency=medium
+
+  * Team upload
+
+  * New upstream version 0.12
+  * declare conformance with Policy 4.1.1 (no changes needed)
+
+ -- Damyan Ivanov <dmn@debian.org>  Tue, 21 Nov 2017 21:24:49 +0000
+
+libextutils-cppguess-perl (0.11-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: use HTTPS for GitHub URLs.
+
+  [ Niko Tyni ]
+  * Prevent autopkgtest checks from recursing under t/
+  * Update to debhelper compatibility level 10
+
+ -- Niko Tyni <ntyni@debian.org>  Tue, 01 Aug 2017 10:44:14 +0300
+
+libextutils-cppguess-perl (0.11-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add build dependency on libmodule-build-perl. (Closes: #805967)
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 24 Nov 2015 22:14:49 +0100
+
+libextutils-cppguess-perl (0.11-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.11
+  * Bump debhelper compatibility level to 9
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Mon, 21 Sep 2015 11:03:52 -0300
+
+libextutils-cppguess-perl (0.09-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Florian Schlichting ]
+  * Add debian/upstream/metadata
+  * Import upstream version 0.09
+    Closes: #789209
+  * Drop obsolete Module::Build dependency
+  * Email change: Florian Schlichting -> fsfs@debian.org
+  * Add autopkgtest header
+
+  [ gregor herrmann ]
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 19 Jun 2015 00:44:29 +0200
+
+libextutils-cppguess-perl (0.7-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #689737)
+
+ -- Florian Schlichting <fschlich@zedat.fu-berlin.de>  Fri, 05 Oct 2012 21:39:47 +0200

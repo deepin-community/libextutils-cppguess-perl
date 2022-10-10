@@ -1,0 +1,2 @@
+# not in this case. M::B is only used during tests, not for building
+libextutils-cppguess-perl source: libmodule-build-perl-needs-to-be-in-build-depends

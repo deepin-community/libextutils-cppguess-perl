@@ -1,0 +1,85 @@
+0.23 2021-05-31
+- added CI - thanks @zmughal
+- now recognises MacOS clang - thanks @xenu
+
+0.22 2021-05-29
+- Add C++ standard support flag detection - thanks @zmughal!
+  See <https://github.com/tsee/extutils-cppguess/pull/24>.
+
+0.21 2020-01-23
+- no give $Config{ccflags} in Module::Build as add not replace - thanks @xenu
+
+0.20    Sat 31 Aug 22:20:32 BST 2019
+    - no link -lstdc++ if -static-libstdc++ - thanks @andygrundman
+
+0.19    Mon  1 Apr 07:08:46 BST 2019
+    - support clang on Perl 5.14-16 with ExtUtils::ParseXS >= 3.04_01 (yes, really)
+
+0.18    Sun 31 Mar 17:49:21 BST 2019
+    - improve clang detection
+
+0.17    Sat 30 Mar 16:03:52 GMT 2019
+    - support Sun Studio compiler family
+
+0.16    Sat 30 Mar 00:09:42 GMT 2019
+    - test output more if no clue about compiler
+
+0.15    Fri 29 Mar 22:42:00 GMT 2019
+    - iostream_fname, cpp_flavor_defs methods
+    - add which actual compiler to use to generated MB and EUMM flags
+    - make the test sensitive to whether to #include with a ".h"
+
+0.14	Mon 25 Mar 21:13:36 GMT 2019
+    - add is_clang, unify OS-based detection
+
+0.13	Mon Mar 25 02:57:02 2019 +0000
+    - repo tidied slightly
+    - use Travis
+    - add compiler_command, linker_flags
+    - test all known configurations
+    - inhale knowledge from Inline::CPP
+
+0.12	Sat Oct 21 18:12:51 BST 2017
+    - Fix tests on 5.26 without '.' in @INC (kentfredric)
+
+0.11   Thu Sep 10 13:12:17 MDT 2015
+    - Add leading whitespace to $cflags in _get_cflags (bulk88)
+
+0.10   Tue Sep 08 21:15:30 MDT 2015
+    - Config's ccflags must always be used. (bulk88)
+
+0.09   Sat Apr 11 16:05:50 BST 2015
+	- Convert to EUMM
+	- Make tests divulge guessed options for better debugging
+
+
+0.08   Thu Jan 15 03:07:38 GMT 2015
+	- Update metadata
+
+
+0.07   Thu Jul  7 17:00:00 CEST 2011
+	- Fix for unknown enum `vtype' on solaris 2.11 (Tobias Leich)
+          See http://www.cpantesters.org/cpan/report/a0cca9ee-39e3-11e0-83a5-34754e7aadc9
+        - NetBSD fix for: Undefined PLT symbol _Unwind_Resume (Tobias Leich)
+
+
+0.06   Sun Jun  5 21:00:00 CEST 2011
+	- Fix for -D_FILE_OFFSET_BITS (Tobias Leich)
+          See http://www.cpantesters.org/cpan/report/b6e29992-894c-11e0-b6b1-f9d75287cfae
+
+0.05   Tue Feb 15 23:00:00 CEST 2010
+	- Fix test failures on win32 (Shmuel Fomberg)
+
+0.04   Mon Jul 12 18:00:00 CEST 2010
+	- Fix problem with duplicate extra-linker/compiler options
+
+0.03   Thu Jul  1 18:00:00 CEST 2010
+	- Fix tests to use the current perl
+        - Make tests use Capture::Tiny
+        - Very explicit dependencies in Build.PL
+
+0.02   Mon Jun 28 20:00:00 CEST 2010
+	- Just removed debugging code.
+
+0.01   Mon Jun 28 20:00:00 CEST 2010
+	- First release.
